@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MarcChat</title>
     <link rel="icon" href="./img/favicon.png" />
-    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e7694cde96.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="chat">
-      <div class="chat__sidebar" id="sidebar"></div>
+      <div class="chat__sidebar none" id="sidebar"></div>
+      <div class="chat__sidebar__icon">
+        <i class="fas fa-ellipsis-v sideIcon" id="showRoom"></i>
+      </div>
       <div class="chat__main">
         <div id="messages" class="chat__messages"></div>
         <div class="compose">

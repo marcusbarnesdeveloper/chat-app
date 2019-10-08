@@ -6,7 +6,8 @@ const form = document.querySelector('#form');
 const msg = document.querySelector('#msg');
 const locationBtn = document.querySelector('#location');
 const messages = document.querySelector('#messages');
-
+const showRoom = document.querySelector('#showRoom');
+const sidebar = document.querySelector('#sidebar');
 // Templates
 const msgTemp = document.querySelector('#message-temp').innerHTML;
 const locationTemp = document.querySelector('#location-temp').innerHTML;
@@ -72,7 +73,9 @@ locationBtn.addEventListener('click', () => {
     );
   });
 });
-
+showRoom.addEventListener('click', () => {
+  sidebar.classList.toggle('none');
+});
 // Socket events
 socket.on('welcome', msg => {
   const html = Mustache.render(msgTemp, {
