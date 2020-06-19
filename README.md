@@ -1,6 +1,7 @@
 # chat-app
 
 An application that allows user to create, join and have conversations in chat rooms
+
 ![demo](demo/demo.gif)
 
 ## Technology used
@@ -24,7 +25,7 @@ From within the root directory:
 npm install
 ```
 
-To serve the module on localhost:3002:
+To serve the module on localhost:3000:
 
 ```sh
 npm start
